@@ -1,0 +1,72 @@
+body {
+	display: flex;
+}
+#acd-menu{
+	display: none;
+	/* visibility: hidden;
+	opacity: 0; */
+}
+.acd-menu-label{
+	color: #0068b7;
+	width: fit-content;
+	padding: 5px;
+	border: 1px solid black;
+	text-align: justify;
+}
+#acd-menu:checked ~ .acd-body{
+	display: block;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s; 
+}
+.acd-body{
+	/* display ? transition????? */
+	/* display: none; */
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s; 
+	background-color: rgb(136, 184, 241);
+	width: 300px;
+	height: 100vh;
+}
+.acd-check{
+	display: none;
+}
+.acd-label{
+	background: #0068b7;
+	color: #fff;
+	display: block;
+	margin-bottom: 1px;
+	padding: 10px;
+	position: relative;
+}
+.acd-label:after{
+	background: #00479d;
+	box-sizing: border-box;
+	content: '＋';
+	display: block;
+	font-family: "Font Awesome 5 Free";
+	height: 52px;
+	padding: 10px 20px;
+	position: absolute;
+	right: 0;
+	top: 0px;
+}
+.acd-content{
+	border: 1px solid blue;
+	display: block;
+	height: 0;
+	opacity: 0;
+	padding: 0 10px;
+	transition: .5s;
+	visibility: hidden;
+}
+.acd-check:checked + .acd-label:after{
+	content: 'ー';
+}
+.acd-check:checked + .acd-label + .acd-content{
+	height: 50px;
+	opacity: 1;
+	padding: 10px;
+	visibility: visible;
+}
