@@ -1,0 +1,19 @@
+h1 {
+	/* Center */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: auto;
+	padding: 3px;
+	/* before Fade In */
+	opacity: 0;
+	transition-duration: 3s;
+	/* Border */
+	border:solid 2px #111;
+	border-radius: 3px;
+	background-color: aliceblue;
+}
+.effect {
+	/* after Fade In */
+	opacity: 1;
+}
