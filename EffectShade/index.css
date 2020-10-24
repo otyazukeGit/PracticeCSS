@@ -1,19 +1,95 @@
-h1 {
-	/* Center */
+#effectBox {
+	display: flex;
+	position: relative;
+	color: #FFF;
+	background-color: #000;
+	width: 100px;
+	height: 100px;
+
+	/* Before Fade In */
+	opacity: 1;
+
+	/* Border */
+	border-radius: 10px;
+
+	/* Window Center */
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	transform: translate(-50%, -50%);
 	margin: auto;
-	padding: 3px;
-	/* before Fade In */
+
+}
+
+#box {
+	/* Flex Item */
+	justify-content: center;
+	align-items: center;
+}
+.effect1::before {
+	content: '横読み';
+	font-style: oblique;
+	font-size-adjust: 30;
+
+	/* Position */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	/* animation: animation-nameの値 animation-durationの値 animation-timing-functionの値 animation-delayの値 animation-iteration-countの値 animation-directionの値 animation-fill-modeの値 animation-play-stateの値; */
+	/* animation: 名前 開始から終了までの時間 進行の度合い 開始時間 繰り返し回数 再生方向 開始前・終了後のスタイル 再生・停止; */
+	animation: effectAnimation1 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes effectAnimation1 {
+	80% {
+			opacity:1;
+	}
+	100% {
+			opacity:0;
+	}
+}
+
+.effect2::before {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-top: 10px solid #7a0;
+	border-right: 10px solid #7a0;
 	opacity: 0;
-	transition-duration: 3s;
-	/* Border */
-	border:solid 2px #111;
-	border-radius: 3px;
-	background-color: aliceblue;
+
+	/* Position */
+	top: 50%;
+	left: 50%;
+
+	/* Arrow Right */
+	/* transform: translate(-75%, -50%) rotate(45deg); */
+	/* Arrow Left */
+	/* transform: translate(-25%, -50%) rotate(225deg); */
+	/* Arrow Down */
+	transform: translate(-50%, -75%) rotate(135deg);
+	/* Arrow Up */
+	/* transform: translate(-50%, -25%) rotate(315deg); */
+
+	animation: effectAnimation2 2.5s;
+	animation-fill-mode: forwards;
+
 }
-.effect {
-	/* after Fade In */
-	opacity: 1;
+@keyframes effectAnimation2 {
+	15% {
+		opacity:1;
+	}
+	70% {
+		opacity:1;
+		/* Arrow Left */
+		transform: translate(-25%, -50%) rotate(225deg);
+	}
+	100% {
+		opacity:1;
+		/* Arrow Left */
+		transform: translate(-25%, -50%) rotate(225deg);
+	}
 }
+
