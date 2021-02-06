@@ -8,7 +8,7 @@ This project is to practice CSS and Animation.
 
 ## HolyGrail
 
-<img src="https://github.com/otyazukeGit/PracticeCSS/blob/master/HolyGrail/holy_grail.png.png" width="400" height="375">
+<img src="https://github.com/otyazukeGit/PracticeCSS/blob/master/HolyGrail/holy_grail.png" width="400" height="375">
 
 ## SideBar_Accordion
 
