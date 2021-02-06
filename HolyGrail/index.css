@@ -1,32 +1,36 @@
 body {
-	display: grid;
-	/* grid-template-areas:  */
-	grid-template: 
-	"header header header" 50px
-	"...... ...... ......" 10px
-	"left   center right " 1fr
-	"...... ...... ......" 10px
-	"footer footer footer" 80px
-	/ 100px 1fr 150px
-	;
-	/* grid-template-rows: 50px 10px 1fr 10px 80px; */
-	/* grid-template-columns: 100px 1fr 150px; */
-	width: 80vw;
-	height: 100vh;
-	margin: 0 auto;
+  display: grid;
+  /* grid-template-areas:  */
+  grid-template:
+    "header header header" 50px
+    "...... ...... ......" 10px
+    "left   center right " 1fr
+    "...... ...... ......" 10px
+    "footer footer footer" 80px
+    / 100px 1fr 150px;
+  /* grid-template-rows: 50px 10px 1fr 10px 80px; */
+  /* grid-template-columns: 100px 1fr 150px; */
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
 }
 header {
-	grid-area: header;
+  grid-area: header;
+  background-color: #33ffff;
 }
 nav {
-	grid-area: left;
+  grid-area: left;
+  background-color: #ccffff;
 }
 main {
-	grid-area: center;
+  grid-area: center;
+  background-color: #99ffff;
 }
-div {
-	grid-area: right;
+aside {
+  grid-area: right;
+  background-color: #66ffff;
 }
 footer {
-	grid-area: footer;
+  grid-area: footer;
+  background-color: #33ffff;
 }
