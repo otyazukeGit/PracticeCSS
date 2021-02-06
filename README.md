@@ -4,7 +4,9 @@ This project is to practice CSS and Animation.
 
 ## EffectShade
 
-![EffectShade](https://github.com/otyazukeGit/PracticeCSS/blob/master/EffectShade/onLoad_like_MangaApp.mov)
+<video controls>
+  <source src="https://github.com/otyazukeGit/PracticeCSS/blob/master/EffectShade/onLoad_like_MangaApp.mov" type="video/mp4">
+</video>
 
 ## HolyGrail
 
