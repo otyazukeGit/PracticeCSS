@@ -2,6 +2,12 @@
 
 This project is to practice CSS and Animation.
 
+## Bootstrap
+
+Sample landing page using Bootstrap 5.
+
+<img src="https://github.com/otyazukeGit/PracticeCSS/blob/master/Bootstrap/bootstrap_landing_page_400.png">
+
 ## EffectShade
 
 Initial animation on web page.
